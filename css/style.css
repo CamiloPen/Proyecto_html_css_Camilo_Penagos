@@ -47,7 +47,7 @@ hr {
 }
 
 .container-body {
-    display: grid;
+    display: grid !important;
     row-gap: 20px;
 }
 
@@ -74,10 +74,18 @@ hr {
 .container-body_item {
     display: flex;
     text-decoration: none;
-    color: black;
+    color: rgb(113, 113, 113);
     justify-content: space-between;
     align-items: baseline;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px 5px rgba(211, 201, 201, 0.288);
+}
+
+.container-body_right {
+    text-align: right;
+}
+
+.container-body_right span {
+    font-size: 25px;
 }

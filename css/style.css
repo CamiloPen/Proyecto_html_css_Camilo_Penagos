@@ -5,11 +5,14 @@
     font-family: "Roboto";
 }
 
+hr {
+    width: 100%;
+}
+
 .container {
     margin: auto;
     padding: 20px;
     border-radius: 10px;
-    max-width: 500px;
     text-align: center;
     box-shadow: 5px 5px 5px 5px rgba(211, 201, 201, 0.288);
 }
@@ -48,12 +51,12 @@
     row-gap: 20px;
 }
 
-.container-form > input {
+.container-form > input, .container-form select {
     height: 45px;
     padding: 15px;
 }
 
-.container-form > input:hover {
+.container-form > input:hover, .container-form select:hover {
     background-color: beige;
 }
 

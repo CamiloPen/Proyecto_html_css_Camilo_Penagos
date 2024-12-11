@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titan+One&display=swap');
+
+* {
+    transition: .8s;
+    font-family: "Roboto";
+}
+
+.container {
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(211, 201, 201, 0.288);
+}
+
+.container-header {
+    line-height: 5px;
+}
+
+.container-header :nth-child(2){
+    color: rgb(65, 131, 255);
+    font-size: 21px;
+    font-family: "Titan One", sans-serif;
+}
+
+.container-header :last-child {
+    color: rgb(207, 0, 138);
+}
+
+.container-header_img {
+    padding: 5px;
+    margin: 40px auto;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 30px;
+    transform: rotate(-45deg);
+    background-image: linear-gradient(rgb(207, 0, 138), rgb(65, 131, 255));
+}
+
+.container-header_img :first-child{
+    width: 100%;
+    transform: rotate(16deg);
+}
+
+.container-form {
+    display: grid;
+    row-gap: 20px;
+}
+
+.container-form > input {
+    height: 45px;
+    padding: 15px;
+}
+
+.container-form > input:hover {
+    background-color: beige;
+}
+
+.container-form_submit {
+    border: none;
+    background-color: rgb(65, 131, 255);
+    color: white;
+    border-radius: 10px;
+}
+
+.container-form_submit:hover {
+    background-color: rgb(23, 79, 182) !important;
+}
+

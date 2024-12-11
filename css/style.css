@@ -46,28 +46,38 @@ hr {
     transform: rotate(16deg);
 }
 
-.container-form {
+.container-body {
     display: grid;
     row-gap: 20px;
 }
 
-.container-form > input, .container-form select {
+.container-body > input, .container-body select {
     height: 45px;
     padding: 15px;
 }
 
-.container-form > input:hover, .container-form select:hover {
+.container-body > input:hover, .container-body select:hover {
     background-color: beige;
 }
 
-.container-form_submit {
+.container-body_submit {
     border: none;
     background-color: rgb(65, 131, 255);
     color: white;
     border-radius: 10px;
 }
 
-.container-form_submit:hover {
+.container-body_submit:hover {
     background-color: rgb(23, 79, 182) !important;
 }
 
+.container-body_item {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(211, 201, 201, 0.288);
+}

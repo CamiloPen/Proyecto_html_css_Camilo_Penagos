@@ -21,7 +21,7 @@ hr {
     line-height: 5px;
 }
 
-.container-header :nth-child(2){
+.container-header :nth-child(2) {
     color: rgb(65, 131, 255);
     font-size: 21px;
     font-family: "Titan One", sans-serif;
@@ -34,16 +34,13 @@ hr {
 .container-header_img {
     padding: 5px;
     margin: 40px auto;
-    max-width: 150px;
-    max-height: 150px;
+    padding: 5px;
     border-radius: 30px;
-    transform: rotate(-45deg);
-    background-image: linear-gradient(rgb(207, 0, 138), rgb(65, 131, 255));
+    background-image: linear-gradient(to right,rgb(207, 0, 138), rgb(65, 131, 255));
 }
 
-.container-header_img :first-child{
-    width: 100%;
-    transform: rotate(16deg);
+.container-header_img img:first-child{
+    max-width: 200px;
 }
 
 .header_back {
@@ -71,9 +68,22 @@ hr {
     margin: auto;
 }
 
+.header_box p {
+    font-family: "Titan One", sans-serif;
+    font-size: 32px;
+}
+
+.header_box p span {
+    font-size: 16px;
+}
+
 .container-body {
     display: grid !important;
     row-gap: 20px;
+}
+
+.container-body > label {
+    text-align: left;
 }
 
 .container-body > input, .container-body select {
@@ -96,11 +106,21 @@ hr {
     background-color: rgb(23, 79, 182) !important;
 }
 
+.container-body_user {
+    display: flex;
+    max-height: 100px;
+}
+
+.container-body_user img {
+    max-height: 100px;
+}
+
 .container-body_item {
     display: flex;
     text-decoration: none;
     color: rgb(113, 113, 113);
-    justify-content: space-evenly;
+    justify-content: space-between;
+    column-gap: 10px;
     align-items: center;
     padding: 20px;
     border-radius: 10px;
@@ -113,6 +133,10 @@ hr {
 
 .container-body_right {
     text-align: right;
+}
+
+.container-body_left {
+    text-align: left;
 }
 
 .container-body_right span {

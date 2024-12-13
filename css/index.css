@@ -1,0 +1,25 @@
+.container__header {
+    line-height: 5px;
+}
+
+.container__header :nth-child(2) {
+    color: rgb(65, 131, 255);               /* ESTILOS DEL TITULO DE LA PAGINA */
+    font-size: 25px;
+    font-family: "Titan One", sans-serif;
+}
+
+.container__header :last-child {
+    color: rgb(207, 0, 138);      /* COLOR DEL SUBTITULO DE LA PAGINA */
+}
+
+.container__header--img {
+    padding: 5px;
+    margin: 40px auto;          /* ESTILOS PARA EL FONDO DE LA IMAGEN */
+    padding: 5px;           
+    border-radius: 30px;
+    background-image: linear-gradient(to right,rgb(207, 0, 138), rgb(65, 131, 255));
+}
+
+.container__header--img img{
+    max-width: 200px;
+}

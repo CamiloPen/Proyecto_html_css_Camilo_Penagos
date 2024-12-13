@@ -4,69 +4,47 @@ hr {
     width: 100%;
 }
 
+.header--back {                                                                           
+    margin: -10px;                                                                        
+    padding: 30px 20px 45px;                                                              /* FONDO DEL HEADER CON SU */
+    background-image: linear-gradient(to right, rgb(207, 0, 138), rgb(65, 131, 255)); /* RESPECTIVO MARGEN Y PADDING */
+    margin-bottom: -15px;                                                                 /* EN EL FONDO */
+    z-index: -1;                                                                          
+}
+
+.header--box {                                    
+    color: white;                               
+    display: grid;                                
+    grid-template-columns: 1fr 1fr;               /* CONTENEDOR DE LA IMAGEN */
+    column-gap: 10px;                             /* CON EL TEXTO*/
+    margin: auto;                                 
+    justify-content: center;                      
+    align-items: center;                          
+    max-width: 400px;                            
+}
+
+.header--box img {                              
+    width: 100%;                                
+    min-width: 90px;         /* ESTILO DE LA IMAGEN DEL HEADER */
+    margin: auto;                               
+}                                              
+
+.header--box p {                                
+    font-family: "Titan One", sans-serif;     /* ESTILO DE LA PRIMERA PARTE DEL TEXTO */  
+    font-size: 32px;                            
+}   
+
+.header--box p span{
+    font-size: 13px;    /* ESTILO DE LA SEGUNDA PARTE DEL TEXTO */  
+}
+
 .container {
     margin: -10px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 20px;             /* CONTENEDOR PRINCIPAL */
     text-align: center;
     background-color: white; 
     font-family: "Roboto";
-}
-
-.container__header {
-    line-height: 5px;
-}
-
-.container__header :nth-child(2) {
-    color: rgb(65, 131, 255);
-    font-size: 25px;
-    font-family: "Titan One", sans-serif;
-}
-
-.container__header :last-child {
-    color: rgb(207, 0, 138);
-}
-
-.container__header--img {
-    padding: 5px;
-    margin: 40px auto;
-    padding: 5px;
-    border-radius: 30px;
-    background-image: linear-gradient(to right,rgb(207, 0, 138), rgb(65, 131, 255));
-}
-
-.container__header--img img{
-    max-width: 200px;
-}
-
-.header--back {
-    margin: -10px;
-    padding: 30px 20px 45px;
-    background-image: linear-gradient(to right, rgb(207, 0, 138), rgb(65, 131, 255));
-    margin-bottom: -15px;
-    z-index: -1;
-}
-
-.header--box {
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    max-width: 400px;
-}
-
-.header--box img {
-    width: 100%;
-    min-width: 90px;
-    margin: auto;
-}
-
-.header--box p {
-    font-family: "Titan One", sans-serif;
-    font-size: 32px;
 }
 
 .container__body {
@@ -116,7 +94,7 @@ hr {
     text-align: right;
 }
 
-.header--box p span, .container__body--item :is(p:last-child span, span) {
+.container__body--item :is(p:last-child span, span) {
     font-size: 25px;
 }
 
